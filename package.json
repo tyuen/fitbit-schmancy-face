@@ -1,0 +1,26 @@
+{
+  "fitbit": {
+    "appUUID": "62bce903-fbc8-43b4-a941-eeadd60fac6d",
+    "appType": "clockface",
+    "appDisplayName": "Schmancy",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_user_profile"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Schmancy"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}
