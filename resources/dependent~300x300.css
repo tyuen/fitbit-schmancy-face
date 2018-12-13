@@ -1,0 +1,13 @@
+#markers {
+  x: 7;
+  y: 7;
+  width: 100%-14;
+  height: 100%-14;
+}
+
+.stat {
+  font-size: 90;
+  font-family: Seville-Bold;
+  text-length: 8;
+  text-anchor: middle;
+}

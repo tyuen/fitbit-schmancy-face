@@ -1,0 +1,36 @@
+line {
+  stroke-linecap: round;
+}
+
+.marker {
+  r: 3;
+}
+
+.corner-text {
+  font-size: 26;
+  font-family: Seville-Regular; 
+}
+
+#batt {
+  x: 0;
+  y: 18;
+  text-length: 4;
+}
+
+#time2 {
+  x: 0;
+  y: 100%;
+  text-length: 5;
+}
+
+#week {
+  x: 100%;
+  y: 100%;
+  text-length: 40;
+}
+
+#date {
+  x: 100%;
+  y: 18;
+  text-length: 4;
+}

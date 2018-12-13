@@ -1,0 +1,64 @@
+<svg id="main" viewport-fill="black">
+
+  <mask id="roundcorners">
+    <rect x="10" y="0" width="100%-20" height="100%" />
+    <rect x="0" y="10" width="100%" height="100%-20" />
+    <circle cx="10" cy="10" r="10" />
+    <circle cx="100%-10" cy="10" r="10" />
+    <circle cx="10" cy="100%-10" r="10" />
+    <circle cx="100%-10" cy="100%-10" r="10" />
+  </mask>
+
+  <svg mask="#roundcorners">
+    <image id="bkgd" href="/private/data/bkgd.txi" x="0" y="0" width="100%" height="100%" display="none" />
+  </svg>
+
+  <svg id="markers" fill="#888888" opacity="0.3">
+    <circle id="mark0" class="marker" cx="50%" cy="0" fill="inherit" />
+    <circle id="mark3" class="marker" cx="100%" cy="50%" fill="inherit" />
+    <circle id="mark6" class="marker" cx="50%" cy="100%" fill="inherit" />
+    <circle id="mark9" class="marker" cx="0" cy="50%" fill="inherit" />
+    <!-- the below dots are positioned using code -->
+    <circle id="mark1" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark2" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark4" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark5" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark7" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark8" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark10" class="marker" cx="0" cy="0" fill="inherit" />
+    <circle id="mark11" class="marker" cx="0" cy="0" fill="inherit" />
+  </svg>
+
+  <g transform="translate(50%, 50%)">
+    <g id="mins">
+      <line x1="0" y1="-7%" x2="0" y2="-50%+6" stroke-width="10" fill="black" opacity="0.8" />
+      <line x1="0" y1="-7%" x2="0" y2="-50%+6" stroke-width="8" fill="white" />
+      <line x1="0" y1="0" x2="0" y2="-20%" stroke-width="1" fill="white" />
+    </g>
+
+    <g id="hours">
+      <line x1="0" y1="-7%" x2="0" y2="-27%" stroke-width="12" fill="black" opacity="0.8" />
+      <line x1="0" y1="-7%" x2="0" y2="-27%" stroke-width="10" fill="white" />
+      <line x1="0" y1="0" x2="0" y2="-20%" stroke-width="1" fill="white" />
+    </g>
+
+    <g id="secs">
+      <line x1="0" y1="8%" x2="0" y2="-50%+1" stroke-width="1" fill="white" opacity="0.9" />
+    </g>
+  </g>
+
+
+  <svg id="stats" x="2" y="2" width="100%-4" height="100%-4" opacity="0.7">
+    <text id="row1" class="stat" x="50%-2" y="12.5%+31" fill="red"></text>
+    <text id="row2" class="stat" x="50%-2" y="37.5%+31" fill="darkorange"></text>
+    <text id="row3" class="stat" x="50%-2" y="62.5%+31" fill="green"></text>
+    <text id="row4" class="stat" x="50%-2" y="87.5%+31" fill="cornflowerblue"></text>
+  </svg>
+
+  <svg id="corners" x="8" y="8" width="100%-16" height="100%-16" fill="#888888" opacity="0.6">
+    <text id="batt" class="corner-text" text-anchor="start" fill="inherit"></text>
+    <text id="time2" class="corner-text" text-anchor="start" fill="inherit"></text>
+    <text id="week" class="corner-text" text-anchor="end" fill="inherit"></text>
+    <text id="date" class="corner-text" text-anchor="end" fill="inherit"></text>
+  </svg>
+</svg>
